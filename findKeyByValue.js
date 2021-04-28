@@ -29,3 +29,7 @@ const favFoods = {
 assertEqual(findKeyByValue(favFoods, "sweet potato fries"), "side");
 assertEqual(findKeyByValue(favFoods, "moscow mule"), "drink");
 assertEqual(findKeyByValue(favFoods, "cheesecake"), undefined);
+
+const emptyObj = {}
+
+assertEqual(findKeyByValue(emptyObj, "someVal"), undefined);

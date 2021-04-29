@@ -3,14 +3,14 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKeyByValue = (obj, val) => {
-  for(let key in obj){
-    if (obj[key] === val){
-      return key
+  for (let key in obj) {
+    if (obj[key] === val) {
+      return key;
     }
   }
-}
+};
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
@@ -24,12 +24,12 @@ const favFoods = {
   main: "steak",
   side: "sweet potato fries",
   drink: "moscow mule"
-}
+};
 
 assertEqual(findKeyByValue(favFoods, "sweet potato fries"), "side");
 assertEqual(findKeyByValue(favFoods, "moscow mule"), "drink");
 assertEqual(findKeyByValue(favFoods, "cheesecake"), undefined);
 
-const emptyObj = {}
+const emptyObj = {};
 
 assertEqual(findKeyByValue(emptyObj, "someVal"), undefined);

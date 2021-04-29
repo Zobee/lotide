@@ -1,16 +1,16 @@
 const eqArrays = (arr1, arr2) => {
-  if(arr1.length !== arr2.length){
-    return false
+  if (arr1.length !== arr2.length) {
+    return false;
   }
-  for(let i = 0; i < arr1.length; i++){
-    let valA = arr1[i]
-    let valB = arr2[i]
-    if (valA !== valB){
-      return false
+  for (let i = 0; i < arr1.length; i++) {
+    let valA = arr1[i];
+    let valB = arr2[i];
+    if (valA !== valB) {
+      return false;
     }
   }
-  return true
-}
+  return true;
+};
 
 const assertArraysEqual = (actual, expected) => {
   console.log(eqArrays(actual, expected) ? `✅✅✅ Assertion Passed: ${actual} === ${expected}` : `🛑🛑🛑 Assertion failed: ${actual} !== ${expected}`);
@@ -25,15 +25,15 @@ const without = (source, itemsToRemove) => {
 //     }
 //   }
 //   return filteredArray
-    return source.filter(val => !itemsToRemove.includes(val))
-}
+  return source.filter(val => !itemsToRemove.includes(val));
+};
 
-assertArraysEqual(without([1, 2, 3], [1]), [2, 3])
-assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"])
-assertArraysEqual(without([1], []), [1])
-assertArraysEqual(without([1], [1]), [])
-assertArraysEqual(without([], [1]), [])
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
+assertArraysEqual(without([1], []), [1]);
+assertArraysEqual(without([1], [1]), []);
+assertArraysEqual(without([], [1]), []);
 
-let arr = [1,2,3,4,5]
-without(arr, [2,3])
-assertArraysEqual(arr, [1,2,3,4,5])
+let arr = [1,2,3,4,5];
+without(arr, [2,3]);
+assertArraysEqual(arr, [1,2,3,4,5]);

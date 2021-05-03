@@ -17,7 +17,7 @@ let res = findKey({
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
-}, x => x.stars === 2) // => "noma"
+}, x => x.stars === 2); // => "noma"
 
 assertEqual(res, 'noma');
 
@@ -42,5 +42,5 @@ const students = {
   Enrique: {grades: [80, 72, 90, 88], age: 50},
 };
 
-assertEqual(findKey(students, val => val.age===33), "Den")
-assertEqual(findKey(students, val => val.grades.includes(100)), "Alice")
+assertEqual(findKey(students, val => val.age === 33), "Den");
+assertEqual(findKey(students, val => val.grades.includes(100)), "Alice");

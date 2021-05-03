@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@username/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lodash clone library.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/Zobee/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Zoheb Boga",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Zobee/lotide/issues"
